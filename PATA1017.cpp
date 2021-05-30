@@ -4,7 +4,7 @@
  * @Author: Geeks_Z
  * @Date: 2021-05-13 10:20:55
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-14 17:30:36
+ * @LastEditTime: 2021-05-30 21:33:19
  */
 #include <cstdio>
 #include <iostream>
@@ -79,12 +79,14 @@ void DFS(int v)
       }
       else
       {
+        //携带的数量能够满足当前station的需求
         if (back > (0 - weight[id]))
         {
           back += weight[id];
         }
         else
         {
+          //出去目前携带的 还应该携带的
           need += ((0 - weight[id]) - back);
           back = 0;
         }

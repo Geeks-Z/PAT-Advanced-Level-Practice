@@ -4,7 +4,7 @@
  * @Author: Geeks_Z
  * @Date: 2021-05-12 20:09:40
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-12 21:13:03
+ * @LastEditTime: 2021-05-30 20:25:02
  */
 #include <cstdio>
 #include <iostream>
@@ -45,6 +45,7 @@ int main()
       continue;
     }
     int rev = 0;
+    //获取d进制下的相反数
     while (num != 0)
     {
       rev = rev * d + (num % d);
